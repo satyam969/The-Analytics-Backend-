@@ -13,7 +13,7 @@ const adminRoute=require("./router/admin-router")
 
 // ek aur step krna hoga wrna data nhi jyega database pe 
 const corsOptions={
-    origin:"http://localhost:5173",
+    origin:"https://the-analytics-frontend.vercel.app",
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 }
