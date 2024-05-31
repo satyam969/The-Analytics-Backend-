@@ -84,23 +84,19 @@ app.use(errorMiddleware);
 
 
 
-const PORT = 5000;
-
 // if connection established then 
 // as connectdb will return promise 
 
 
 
+// Database connection and handler export for Vercel
+const handler = async (req, res) => {
+    try {
+        await connectDb(); // Ensure database connection
+        app(req, res); // Handle request with Express app
+    } catch (e) {
+        res.status(500).json({ error: "Internal server error" });
+    }
+};
 
-
-
-connectDb().then(()=>{
-    app.listen(PORT, () => {
-        console.log(`server is running at port :- ${PORT}`)
-    })
-
-}
-    )
-    .catch((e)=>{
-    console.log("error in connecting server")
-})
+module.exports = handler;
