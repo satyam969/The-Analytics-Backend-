@@ -1,4 +1,4 @@
-
+require("dotenv").config();
 // top pe hi likhna wo code for env
 const express = require("express");
 const app = express();
