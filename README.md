@@ -1,5 +1,7 @@
 🌟 Demo MERN Application
 
+Deployment Link : https://the-analytics-frontend.vercel.app
+
 Welcome to the Demo MERN Application! This project is a full-featured web application built with the MERN stack (MongoDB, Express.js, React, Node.js) and deployed on Vercel. The application includes user authentication, dynamic data management, and an admin panel for advanced features. Below, you'll find an overview of the key features, technologies used, and instructions to get started with the project.
 
 🚀 Features
